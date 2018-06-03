@@ -26,6 +26,9 @@ function saveBm() {
         content += `${descInput.value.trim()}<br>`;
       }
       chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
+          if (tabs.length < 1) {
+            throw new Error();
+          }
           content += `${tabs[0].url}<br>`;
           postData = {
             path: 'README.md',
