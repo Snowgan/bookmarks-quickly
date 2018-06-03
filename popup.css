@@ -1,0 +1,48 @@
+body {
+  min-height: 120px;
+  width: 360px;
+}
+
+p {
+  font-weight: 600;
+}
+
+p + .form {
+  padding-top: 0;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.form input {
+  line-height: 16px;
+  width: 300px;
+  margin-right: 10px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.loading {
+  visibility: hidden;
+  width: 14px;
+  height: 14px;
+  border-radius: 14px;
+  border: 2px solid #ededed;
+  border-top-color: #5186A3;
+  background: transparent;
+  animation: spin .8s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

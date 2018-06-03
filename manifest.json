@@ -1,0 +1,29 @@
+{
+  "name": "Bookmarks Quickly",
+  "version": "1.0",
+  "description": "Save url of current avtive tab and sync with github",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "img/bookmark_16.png",
+      "32": "img/bookmark_32.png",
+      "64": "img/bookmark_64.png",
+      "128": "img/bookmark_128.png"
+    }
+  },
+  "icons": {
+    "16": "img/bookmark_16.png",
+    "32": "img/bookmark_32.png",
+    "64": "img/bookmark_64.png",
+    "128": "img/bookmark_128.png"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "permissions": [
+    "storage",
+    "tabs"
+  ]
+}
